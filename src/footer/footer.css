@@ -1,0 +1,76 @@
+footer {
+    background-color: #000;
+    color: white;
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+  }
+  footer h2 {
+    margin-bottom: 1rem;
+    letter-spacing:0.2rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+    opacity: 1;
+    font-weight: 300;
+    color: blue;
+    padding-bottom: 1rem;
+   
+  }
+  footer .icon i {
+    color: white;
+  }
+  footer ul li a {
+    opacity: 0.7;
+    color: white;
+    font-size: 13px;
+  }
+  footer ul li {
+    margin-bottom:1rem;
+  }
+  footer .post li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(241, 240, 243);
+  }
+  footer .post li:nth-last-child(1) {
+    border-bottom: none;
+  }
+  footer .post label,
+  footer .post span {
+    opacity: 0.5;
+    margin-right: 10px;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  footer input {
+    background: none;
+    border: 1px solid rgb(247, 240, 240);
+    border-radius: 5px;
+    margin: 1rem 0;
+    height: 2rem;
+  }
+  footer .primary-btn {
+    padding: 20px 20px;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .legal {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    border-top: 1px solid rgb(63, 62, 62);
+    color: white;
+  }
+  .legal p {
+    opacity: 1;
+    color: rgb(46, 18, 172);
+  }
+  @media screen and (max-width: 768px) {
+    footer .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

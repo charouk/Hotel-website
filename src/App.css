@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Splash&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+html{
+  font-size: 1.2rem;
+}
+.flex_space{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.flex{
+  display: flex;
+}
+.navbar{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  height: 4rem;
+  background:linear-gradient(black,rgb(52, 35, 145));
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.login-area{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.container-navbar{
+  display: flex;
+  justify-content: center;
+  width:70%;
+}
+.menu-icon{
+  display: none;
+  color: aliceblue;
+}
+.login-area > li, .container-navbar >ul >li{
+  display: inline-block;
+  transition: all 0.3s ease-in;
+
+}
+.container-navbar >ul >li a, .login-area >li a{
+  color: azure;
+  padding: 0 0.8rem;
+  font-size: 0.8rem ;
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+
+}
+.container-navbar >ul >li a:hover, .login-area >li a:hover{
+  color: rgb(54, 158, 172);
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+/*_______________header_______________*/
+header{
+  padding: 0 ;
+}
+header .icons i{
+  color:rgb(54, 158, 172) ;
+}
+.container{
+  width: 85%;
+  margin: auto;
+
+}
+.contact{
+  display: flex;
+  gap: 1rem;
+}
+.contact .text{
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.contact .text a{
+  color: gray;
+}
+.contact .text a:hover{
+  color: rgb(54, 158, 172);
+}
+/*______________________________end header______________________*/
+/*______________________________start home________________*/
+/*__________slider______________________*/
+
+.slider{
+
+width: 100vw;
+ height:70vh ;
+ margin-top: 1rem;
+ margin: auto;
+  position: relative;
+ 
+ 
+}
+.slider img{
+  width: 100%;
+  height: 70vh;
+}
+.slider .control-btn > button{
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color:  rgb(227, 227, 241);
+ opacity: 1;
+
+  
+}
+.slider .control-btn button i{
+  color: black;
+}
+
+.slider .control-btn .prev{
+
+position: absolute;
+top: 50%;
+left:1rem ;
+
+}
+.slider .control-btn .next{
+
+  position: absolute;
+  top: 50%;
+  right:1rem ;
+  
+  }
+  .slider .control-btn button:hover{
+    background-color: aqua;
+  }
+
+  /*========================AbouUs============*/
+  .about-us{
+   width: 100vw;
+    padding: 0;
+  }
+  .about-us .row1{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    width: 70%;
+   
+  }
+  .about-us h4, h1{
+    padding: 1rem 0;
+    line-height: 2rem;
+    
+  }
+  .about-us .sec-btn{
+    width: 30%;
+    margin: 1rem 0;
+    padding: 0.2rem;
+    background-color: rgb(66, 21, 163);
+    color: aliceblue;
+  }
+  .about-us .row {
+    padding: 0 2rem;
+    width: 100%;
+  }
+  .about-us .image img{
+    width: 90%;
+    height: 80%;
+    margin: 2rem;
+   
+  }
+
+  /*=================================moostPopular=======================*/
+  .popular{
+    width: 100vw;
+    min-height: 80vh;
+    background-color: rgba(88, 87, 87,0.2);
+    
+
+    margin-bottom: 1rem;
+   
+  }
+  .popular .full_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+  }
+  .popular .content{
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:1rem;
+
+  }
+  .popular .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start ;
+    justify-items: flex-start;
+    text-align:start;
+    gap:0.8rem;
+    transition: all 0.5s ease-in;
+    padding: 0.4rem;
+  }
+  .popular .card .location{
+    position: relative;
+    width: auto;
+  }
+  .popular .card .location .image{
+    width: 15rem;
+    height: 10rem;
+    border-radius:1rem;
+    margin-left: 0.7rem;
+    
+  }
+  .popular .card .country{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top:75%;
+    left: 2rem;
+    
+  }
+  .popular .card  .rate, p{
+    color: rgb(116, 16, 156);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left:1rem;
+  }
+  .popular .card:hover{
+    background-color: rgb(92, 117, 129);
+    border-radius: 0.8rem;
+  }
+ /*=======================end Popular===============*/
+
+/*=======================Destinations============*/
+
+.popular .card-dest{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start ;
+  justify-items: flex-start;
+  text-align:start;
+  
+  transition: all 0.5s ease-in;
+  padding: 0.2rem;
+   border: 0.2rem solid rgb(228, 222, 222);
+  
+  }
+
+
+.popular .card-dest .imageDestination {
+  width:100%;
+  height: 10rem;
+}
+.popular .card-dest .country{
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(22, 22, 175);
+}
+.popular .card-dest p{
+  color: aliceblue;
+  padding: 1rem 0.2rem;
+  font-size: 0.8rem;
+}
+.popular .card-dest:hover{
+  cursor: pointer;
+  box-shadow: 0.5rem 0.5rem gray;
+}
+
+/*============================end Destinations======================*/
+/*======================Gallery=====================================*/
+
+.gallery{
+  width: 100vw;
+  min-height: 80vh;
+  background-color: rgba(88, 87, 87,0.2);
+  position: relative;
+
+  margin-bottom: 1rem;
+ 
+}
+section .gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.gallery h1{
+
+  padding-left: 45%;
+}
+.gallery .container{
+  width:90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:2rem;
+
+}
+.gallery .no-toggle{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start ;
+  justify-items: flex-start;
+  text-align:start;
+  gap:0.8rem;
+  transition: all 0.5s ease-in;
+  padding: 0.4rem;
+}
+
+
+
+.gallery .items h3 {
+  color: rgb(116, 16, 156);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left:1rem;
+}
+.gallery .items .no-toggle:hover{
+  background-color: rgb(92, 117, 129);
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.gallery .no-toggle img {
+  width:100%;
+  height: 10rem;
+}
+
+  /*================toggle gallery===========*/
+.gallery  .wdw {
+  background-color: rgb(5, 43, 65);
+    right:  0;
+    top:4rem;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    z-index: 4;
+    height: 100%;
+    width:100vw;
+    position: absolute;
+    
+   
+}
+.gallery  .wdw .hide img{
+  width:50%;
+  height: 30%;
+  margin:0 25%;  
+ 
+}
+.gallery .wdw i{
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+
+}
+
+  
+
+
+
+
+
+
+
+
+/*==========================================end Gallery========================*/
+
+
+
+
+@media screen and (max-width:900px)
+ {
+ .navbar{
+  text-align: center;
+ }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 5rem;
+    right: -100%;
+    transition: all 0.3s ease;
+    opacity: 1;
+    gap: 2rem;
+    padding: 1rem 0 ;
+  }
+  nav ul.active{
+    background-color: rgb(5, 43, 65);
+    right:  0;
+    top:4rem;
+    opacity: 0.8;
+    transition: 0.3s;
+    z-index: 1000;
+    height: 100vh;
+  }
+  nav ul li a{
+    font-weight: 400;
+
+  }
+  .menu-icon{
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+
+  }
+  .login-area li {
+    display: block;
+  }
+  /*for header ================================*/
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    /*____________end header___________________*/
+}
+/*===============slider======*/
+.slider{
+  height: 50vh;
+ 
+}
+.slider img{
+  height: 50vh;
+  z-index: -1;
+}
+/*==========================aboutus===========*/
+.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.about-us .row1{
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding-left: 0;
+}
+.about-us .image img{
+ padding-left: 0;
+ width: 50%;
+}
+/*==============================mostPopular============*/
+
+.popular .content{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+
+}
+.popular{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+ padding: 0 ;
+  overflow: hidden;
+}
+/*==========end popular=============*/
+/*=======================destination=======*/
+/*deja fait*/
+.popular .card-dest .imageDestination{
+  width: 10rem;
+  height: 10rem;
+  
+}
+/*=======================end destination===========*/
+/*==========galerry=======*/
+.gallery .container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  padding-left: 2rem;
+
+}
+.gallery .items img{
+  width: 10rem;
+  height: 10rem;
+  
+}
+.gallery  h1{
+  padding: 1rem 0 2rem 1rem;
+}
+/*==============toggle gallery========*/
+
+
+/*==================end Gallary======================*/
+}
+
+
+
+
+
+
+
+  
+
